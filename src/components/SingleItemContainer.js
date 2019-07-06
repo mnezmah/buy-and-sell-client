@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { getAdds } from '../actions/adds'
 import SingleItem from './SingleItem'
+import './SingleItemContainer.css'
 
 class SingleItemContainer extends Component {
   componentDidMount() {
@@ -20,12 +21,15 @@ class SingleItemContainer extends Component {
 
     return (
       ad
-        ? <SingleItem
-          key={ad.id}
-          picture={ad.picture}
-          title={ad.title}
-          price={ad.price}
-        />
+        ?
+        <div className='container'> 
+          <SingleItem
+            key={ad.id}
+            picture={ad.picture}
+            title={ad.title}
+            price={ad.price}
+          />
+        </div>
         : "Loading..."
     )
   }

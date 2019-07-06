@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+@media(min-width: 860px) {
+  .container {
+    justify-content:space-between;
+  }
+}

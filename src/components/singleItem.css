@@ -1,0 +1,23 @@
+.card {
+  width: 100%;
+  min-width: 200px;
+  max-width: 400px;
+  margin-top: 8vh;
+  border-radius: 4%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+img {
+  border-radius: 4%;
+  width: 100%;
+  max-width: 380px;
+}
+
+.title {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.price {
+  font-weight: 600;
+}

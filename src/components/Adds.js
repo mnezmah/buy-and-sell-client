@@ -3,6 +3,7 @@ import { getAdds } from '../actions/adds'
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom'
 import SingleItem from './SingleItem'
+// import './Adds.css'
 
 class Adds extends Component {
 
@@ -15,28 +16,22 @@ class Adds extends Component {
     if (!this.props.adds.length) { return <h3>loading...</h3> }
     return (
       <div>
-        Welcome to my store
-        <br /> <br />
-        {this.props.adds.map(add => {
-          return <Link
-            key={add.id}
-            to={`/singleitem/${add.id}`}
+        <h3>Welcome to my store</h3>
+        <div className="container">
+          {this.props.adds.map(add => {
+            return <Link
+              key={add.id}
+              to={`/singleitem/${add.id}`}
             >
-              <SingleItem 
+              <SingleItem
                 id={add.id}
                 title={add.title}
                 picture={add.picture}
                 price={add.price}
               />
-            {/* <img src={add.picture} />
-            <br />
-            <span>item:  {add.title}</span>
-            <br />
-            <span>price: {add.price}</span>
-            <br />
-            <br /> */}
-          </Link>
-        })}
+            </Link>
+          })}
+        </div>
       </div>
     )
   }

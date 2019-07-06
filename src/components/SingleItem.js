@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
+import './singleItem.css'
 
 export default class SingleItem extends Component {
   render() {
     console.log('propssss', this.props)
     return (
-      <div>
+      <div className='card'>
         <img src={this.props.picture} alt=""/>
-        <span>item: {this.props.title}</span> <br/><span>price: {this.props.price}</span><br/><br/>
+        <p className='title'>{this.props.title}</p> 
+        <p className="price">price: <span>{this.props.price}  € </span></p>
         <br/>
       </div>
     )
