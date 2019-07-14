@@ -1,19 +1,19 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { getAdds } from '../actions/adds'
+import { getAds } from '../actions/ads'
 import SingleItem from './SingleItem'
 import './SingleItemContainer.css'
 
 class SingleItemContainer extends Component {
   componentDidMount() {
-    this.props.getAdds()
+    this.props.getAds()
   }
 
   render() {
     console.log("props test:", this.props)
-    const { adds } = this.props
-    console.log("adds test:", adds)
-    const ad = adds.find(ad => {
+    const { ads } = this.props
+    console.log("adds test:", ads)
+    const ad = ads.find(ad => {
       return ad.id == this.props.match.params.id
     })
     console.log("ad test:", ad)
@@ -37,8 +37,8 @@ class SingleItemContainer extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    adds: state.adds
+    ads: state.ads
   }
 }
 
-export default connect(mapStateToProps, { getAdds })(SingleItemContainer)
+export default connect(mapStateToProps, { getAds })(SingleItemContainer)

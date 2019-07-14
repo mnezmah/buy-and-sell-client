@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux'
-import adds from './reducer'
+import ads from './ads'
+import ad from './ad'
 
 
 export default combineReducers({
-  adds
+  ads,
+  ad
 })
