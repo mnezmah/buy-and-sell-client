@@ -5,29 +5,39 @@ import SingleItem from './SingleItem'
 import './SingleItemContainer.css'
 
 class SingleItemContainer extends Component {
+  state = {
+    singe: false
+  }
   componentDidMount() {
     this.props.getAds()
   }
 
+  onEdit = () => {
+    this.setState({ single: !this.state.single })
+  }
+
   render() {
-    console.log("props test:", this.props)
     const { ads } = this.props
-    console.log("adds test:", ads)
     const ad = ads.find(ad => {
       return ad.id == this.props.match.params.id
     })
-    console.log("ad test:", ad)
+    console.log('THIS.PROPS FROM SINGLE CONTAINER', this.props)
     console.log("container log")
 
     return (
       ad
         ?
-        <div className='container'> 
+        <div className='container'>
           <SingleItem
             key={ad.id}
             picture={ad.picture}
             title={ad.title}
+            description={ad.description}
             price={ad.price}
+            email={ad.email}
+            phone={ad.phone}
+            showEdit={this.onEdit}
+            params={this.props.match.params}
           />
         </div>
         : "Loading..."

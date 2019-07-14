@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import NewAd from './NewAd'
 import superagent from 'superagent'
-// import { createAd } from '../actions/ads'
 import { connect } from 'react-redux'
 
 class NewAdContainer extends Component {

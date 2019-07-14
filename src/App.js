@@ -4,6 +4,7 @@ import { Route } from 'react-router-dom'
 import Ads from './components/Ads'
 import SingleItemContainer from './components/SingleItemContainer'
 import NewAdContainer from './components/NewAdContainer';
+import EditAdContainer from './components/EditAdContainer'
 
 function App() {
   return (
@@ -18,6 +19,10 @@ function App() {
       <Route
         path="/newad"
         component={NewAdContainer}
+      />
+      <Route
+        path ="/editad"
+        component={EditAdContainer}
       />
 
     </div>
