@@ -29,7 +29,7 @@ Check out the server-side of this project [here](https://github.com/mnezmah/buy-
 - To combine front-end and backend apps in one working project
 - To practice disciplined git usage
 
-## Features used so far 
+## Features built so far 
 - **[Create Routing with React-router ](./src/App.js)**
 - **[Create Ads listing](./src/components/Ads.js)**
 - **[Create snigle Ad view](./src/components/SingleItem.js)**
