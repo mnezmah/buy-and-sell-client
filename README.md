@@ -22,7 +22,7 @@ Check out the server-side of this project [here](https://github.com/mnezmah/buy-
 - **[react](./src/components/Ads.js)**
 - **[redux](./src/reducers/ad.js)**
 - **[redux-thunk](./src/actions/ads.js)**
-- **[css](./src/components/SingleItemContainer.js)**
+- **[css](./src/components/SingleItemContainer.css)**
 
 ## Goals for this project: 
 - To practice making full-stack app
@@ -35,16 +35,16 @@ Check out the server-side of this project [here](https://github.com/mnezmah/buy-
 - **[Create snigle Ad view](./src/components/SingleItem.js)**
 - **[Create form for listing a new Ad](./src/components/NewAdContainer.js)**
 - **[Create form for editing a single Ad](./src/components/EditAdContainer.js)**
-- **[Add some styling](./src/components/SingleItemContainer.js)**
+- **[Add some styling](./src/components/SingleItemContainer.css)**
 
 ## Routes used in this app
-- **[/](./src/components/Ads.js)**
+- **[root](./src/components/Ads.js)**
     Listing of all Advertisments
 
 - **[/singleitem/:id](./src/components/SingleItemContainer.js)**
     Single Ad listing
 
-- **[/newad](./src/components/NewAdContainter.js)**
+- **[/newad](./src/components/NewAdContainer.js)**
     Form for creating a new Advertisment
     
 - **[/editad](./src/components/EditAdContainer.js)**
