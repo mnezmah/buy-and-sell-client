@@ -23,15 +23,7 @@ class NewAdContainer extends Component {
       .send(newAd)
       .then(res => console.log('submitted', res))
       .catch(console.error)
-    console.log('THIS IS MY TITLE', this.state.title)
-    console.log('Ad submited')
     this.setState({
-      // title: "",
-      // picture: "",
-      // description: "",
-      // price: "",
-      // email: "",
-      // phone: "",
       added: !this.state.added
     })
     const redirect = () => {
