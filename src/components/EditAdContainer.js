@@ -27,11 +27,6 @@ export default class EditAdContainer extends Component {
     this.setState({
       edited: !this.state.edited
     })
-    // const refresh = () => {
-    //   setTimeout(() => this.setState({ refresh: !this.state.refresh }), 1300)
-    // }
-    // refresh()
-    console.log('SHOW ME THE STATE', this.state)
   }
 
   render() {
